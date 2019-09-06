@@ -1,0 +1,93 @@
+{
+  "id": "843319ba-3a73-4887-88bc-d003b40b075c",
+  "version": "2.0",
+  "name": "test_zf",
+  "url": "http://59.202.45.151:9090/pubdle/login",
+  "tests": [{
+    "id": "942f459a-dcbd-47e5-a548-68f42a8e8e3c",
+    "name": "登录",
+    "commands": [{
+      "id": "788060de-aa2c-46c3-a6da-8c349ccc34c4",
+      "comment": "",
+      "command": "open",
+      "target": "http://59.202.45.151:9090/pubdle/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d00f4e15-bf27-42a0-ad3c-588d77379474",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1052x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95efd044-343f-4bb5-8441-b23988c69cb0",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bdda48a1-50ea-4956-b31c-a4ddffd7ceda",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "18419970001"
+    }, {
+      "id": "5f5ad90c-cbbf-4e89-aa52-533175db11d4",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "a123456"
+    }, {
+      "id": "71257176-45d2-4dc9-a159-d7d37f54ea39",
+      "comment": "",
+      "command": "click",
+      "target": "css=.submit",
+      "targets": [
+        ["css=.submit", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f1c4ee1-2a67-4bc6-8342-491ed7124f2d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "acd85bda-8889-4203-91d8-7a934b56c9b2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://59.202.45.151:9090/"],
+  "plugins": []
+}
